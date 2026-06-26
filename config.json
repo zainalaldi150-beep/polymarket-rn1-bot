@@ -1,0 +1,56 @@
+{
+  "polymarket": {
+    "clob_api_url": "https://clob.polymarket.com",
+    "gamma_api_url": "https://gamma-api.polymarket.com",
+    "ws_url": "wss://ws-subscriptions-clob.polymarket.com/ws/market",
+    "api_key": "YOUR_API_KEY",
+    "api_secret": "YOUR_API_SECRET",
+    "api_passphrase": "YOUR_PASSPHRASE",
+    "private_key": "YOUR_PRIVATE_KEY"
+  },
+  "trading": {
+    "max_markets": 200,
+    "scan_interval_ms": 500,
+    "min_liquidity": "500",
+    "mispricing_low_threshold": "0.20",
+    "mispricing_high_threshold": "0.80",
+    "min_ev_threshold": "0.05",
+    "maker_spread": "0.02",
+    "max_orders_per_market": 4,
+    "order_size": "10",
+    "hold_to_settlement": true,
+    "max_active_positions": 100,
+    "paper_mode": false,
+    "paper_balance": "1000"
+  },
+  "hft": {
+    "enabled": true,
+    "arbitrage_threshold": "0.005",
+    "latency_ms": 50,
+    "max_arb_size": "50"
+  },
+  "hedging": {
+    "enabled": true,
+    "max_correlation": "0.8",
+    "hedge_ratio": "0.5"
+  },
+  "zombie": {
+    "enabled": true,
+    "profit_take_threshold": "1.0",
+    "ignore_losses": true
+  },
+  "farming": {
+    "enabled": true,
+    "min_price": "0.02",
+    "max_price": "0.04",
+    "farm_size": "5",
+    "expiry_window_minutes": 120
+  },
+  "risk": {
+    "max_position_value": "250000",
+    "max_drawdown": "0.20",
+    "max_order_size": "100",
+    "min_price": "0.02",
+    "max_price": "0.98"
+  }
+}
