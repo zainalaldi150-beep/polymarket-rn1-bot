@@ -1,0 +1,62 @@
+[package]
+name = "polymarket-rn1-bot"
+version = "2.0.0"
+edition = "2021"
+
+[dependencies]
+# Async & Runtime
+tokio = { version = "1", features = ["full", "sync"] }
+tokio-stream = "0.1"
+futures = "0.3"
+
+# HTTP & WebSocket
+reqwest = { version = "0.12", features = ["json", "rustls-tls"] }
+tungstenite = "0.21"
+tokio-tungstenite = "0.21"
+url = "2.5"
+
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde_yaml = "0.9"
+
+# Crypto & Blockchain
+sha2 = "0.10"
+hmac = "0.12"
+hex = "0.4"
+ethers = { version = "2", features = ["signers", "eip712"] }
+
+# Math
+rust_decimal = { version = "1", features = ["serde", "maths"] }
+rust_decimal_macros = "1"
+
+# Logging & Monitoring
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+anyhow = "1"
+thiserror = "1"
+
+# Config & Env
+dotenv = "0.15"
+config = "0.14"
+
+# Utilities
+chrono = "0.4"
+dashmap = "5"
+parking_lot = "0.12"
+rand = "0.8"
+
+# CLI
+clap = { version = "4", features = ["derive"] }
+
+# Google Sheets (opsional)
+google-sheets4 = "7.0.0"
+yup-oauth2 = "8.0.0"
+hyper = "0.14"
+hyper-rustls = "0.24"
+
+# Regex (untuk parsing AI response)
+regex = "1"
+
+# CSV untuk backtesting
+csv = "1"
